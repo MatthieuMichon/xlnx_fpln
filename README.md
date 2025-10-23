@@ -2,7 +2,7 @@ Hi, having even an approximate idea of the internal FPGA device layout helps esp
 
 # Quick Start
 
-> [NOTE:]
+> [!NOTE]
 > The following assumes that the shell environment is set up correctly.
 
 The [root makefile](./Makefile) default target generates a list of all the targeted FPGA devices supported by the installed version of Vivado. By default, a minimal viable design will be generated for all these devices and an *Enterprise* license is required for generating the complete assortment of files for all devices.
