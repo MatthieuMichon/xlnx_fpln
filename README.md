@@ -13,9 +13,17 @@ The [root makefile](./Makefile) default target generates a list of all the targe
 make
 ```
 
-As of late-2025, Vivado lacks support for exporting a bitmap image of the floorplan (not holding my breath on this one), requiring manual intervention for inspecting the floorplan -- i.e opening the Vivado GUI and selecting the floorplan view. As mentioned earlier, the build script does store useful information in the following files:
+As of late-2025, Vivado lacks support for exporting a bitmap image of the floorplan (not holding my breath on this one), requiring manual intervention for inspecting the floorplan -- i.e opening the Vivado GUI and selecting the floorplan view.
 
-| File                                  | Description                       |
+```shell
+vivado build_$PART/project.dcp
+
+# Consider using the Floorplanning window layout (drop-down menu near the upper-right corner)
+```
+
+As mentioned earlier, the build script does store useful information in the following files:
+
+| File                                   | Description                       |
 | -------------------------------------- | --------------------------------- |
 | `devices.txt`                          | List of all the supported devices |
 | `build_$PART/clock_utilization.txt`    | Available clock resources         |
