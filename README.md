@@ -8,9 +8,8 @@ Hi, having even an approximate idea of the internal FPGA device layout helps esp
 The [root makefile](./Makefile) default target generates a list of all the targeted FPGA devices supported by the installed version of Vivado. By default, a minimal viable design will be generated for all these devices and an *Enterprise* license is required for generating the complete assortment of files for all devices.
 
 ```shell
-# Expect multiple hours of runtime, consider archiving the results
-
 make
+# make -j 16 (assuming available memory is plentiful)
 ```
 
 As of late-2025, Vivado lacks support for exporting a bitmap image of the floorplan (not holding my breath on this one), requiring manual intervention for inspecting the floorplan -- i.e opening the Vivado GUI and selecting the floorplan view.
