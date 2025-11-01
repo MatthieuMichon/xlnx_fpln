@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repository is featured in [a discussion](https://adaptivesupport.amd.com/s/question/0D5Pd00000ynGcUKAU/vivado-20251-reportclockutilization-on-xcku3p-returns-wrong-numbers) on the Xilinx community forum regarding [SVD devices](/docs/svd-devices.md).
+
 Hi, having even an approximate idea of the internal FPGA device layout helps especially with designs where latency is a figure of merit. In such instances, design-space exploration can be greatly sped up by having early information on the internal layout of the target FPGA device or family. This purpose of this repository is to provide such information for Xilinx FPGAs.
 
 # Quick Start
